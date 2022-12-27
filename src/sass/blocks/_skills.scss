@@ -1,0 +1,13 @@
+.skills{
+    margin-top: 120px;
+    &__wrapper1{
+        margin: 60px 11px 0 11px;
+        display: grid;
+        grid-template: repeat(2, 270px)/repeat(4, 270px);
+        gap: 13px;
+    }
+    &__item{
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000000;
+    }
+}

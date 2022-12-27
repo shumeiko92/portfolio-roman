@@ -1,0 +1,52 @@
+.resume{
+    padding-top: 120px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 375px);
+        column-gap: 186px;
+        padding: 60px 90px 0 115px;
+    }
+    &__item{
+        position: relative;
+        &:before{
+            content:'';
+            width: 53px;
+            height: 1px;
+            position: absolute;
+            background: #000;
+            left: -52px;
+            top: 18px;
+
+        }
+        &-location{
+            padding-left: 56px;
+        }
+        &-icon{
+            position: relative;
+            @include before_circle;
+            &:before{
+                top: 3px;
+                transform: none;
+                left: 0;
+            }
+            img{
+                position: absolute;
+                left: 18px;
+                top: 15px;
+            }
+        }
+        &-body{
+            margin-top: 12px;
+            font-size: 12px;
+        }
+        &::after{
+            content: '';
+            width: 1px;
+            height: calc(100% + 45px);
+            background-color: #000;
+            position: absolute;
+            left: -53px;
+            top: -53px;
+        }
+    }
+}

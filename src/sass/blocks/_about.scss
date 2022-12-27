@@ -1,0 +1,66 @@
+.about{
+    padding-top: 120px;
+    position: relative;
+    
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 400px 670px;
+        grid-template-rows: minmax(245px, auto) minmax(255, auto);
+        gap: 40px 70px;
+    }
+    &__photo{
+        grid-row: 1/3;
+        img{
+            width: 100%;
+            
+        }    
+            
+    }
+    &__descr{
+        padding-top: 5px;
+        .divider{
+            margin: 0;
+        }
+    }
+
+    &__text{
+        margin-top: 20px;   
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &-skill{
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows: repeat(2, minmax(116, auto));
+        gap: 20px 50px;
+        &__item{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        &__right{
+            width: 200px;
+        }
+        &__descr{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__left{
+            position: relative;
+            padding-top: 15px;
+            padding-left: 20px;
+            @include before_circle;
+            &:before{
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+        }
+       
+        
+    }
+    
+   
+}

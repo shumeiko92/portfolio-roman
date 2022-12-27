@@ -1,0 +1,60 @@
+.title{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    &__promo{
+        font-size: 48px;
+    }
+    &__resume{
+        text-align: center;
+        &-item{
+            font-size: 14px;
+            line-height: 21px;
+            padding-left: 56px;
+            margin-top: 45px;
+        }
+    }
+
+}
+.subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    @include before_circle;
+    &__promo{
+        padding-left: 10px;
+        z-index: 2;
+        position: relative;
+        // @include before_circle;
+    }
+    &__about{
+        padding-left: 12px;
+        position: relative;
+        // @include before_circle;
+    }
+    &__skill{
+        font-size: 14px ;   
+    }
+    &__resume{
+        position: relative;
+        text-align: center;
+        &:before{
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__column{
+        font-size: 20px;
+        line-height: 30px;
+        position: relative;
+        // @include before_circle;
+        &:before{
+            content: '';
+            width: 15px;
+            height: 15px;
+            left: -60px;
+        }
+    }
+}

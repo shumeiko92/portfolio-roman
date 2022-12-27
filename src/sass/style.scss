@@ -1,0 +1,35 @@
+
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'libs/font';
+@import 'base/mixins.scss';
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.divider{
+    width: 60px;
+    height: 3px;
+    margin: 25px auto 0 auto;
+    background: $main_color;
+    
+}
+
+@import 'blocks/title';
+@import 'blocks/promo';
+@import 'blocks/batton';
+@import 'blocks/socials';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skills';

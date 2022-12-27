@@ -1,0 +1,29 @@
+.socials{
+    display: flex;
+    position: fixed;
+    left: 50px; 
+    top: 50%;
+    transform: translateX(-50%)rotate(-90deg);   
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    &__social{
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+        &_icon{
+            transform: rotate(90deg);
+            transition: 0.3s;
+            &:hover{
+                transform: rotate(180deg);
+            }
+        }
+    } 
+    &__line{
+        width: 70px;
+        height: 0px;
+        background: #000;
+        border: 1px solid #000000
+    }
+}
