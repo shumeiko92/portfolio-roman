@@ -21,17 +21,17 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    @include before_circle;
+    
     &__promo{
         padding-left: 10px;
         z-index: 2;
         position: relative;
-        // @include before_circle;
+        @include before_circle;
     }
     &__about{
         padding-left: 12px;
         position: relative;
-        // @include before_circle;
+        @include before_circle;
     }
     &__skill{
         font-size: 14px ;   
@@ -39,6 +39,7 @@
     &__resume{
         position: relative;
         text-align: center;
+        @include before_circle;
         &:before{
             top: -5px;
             left: 50%;
@@ -49,12 +50,12 @@
         font-size: 20px;
         line-height: 30px;
         position: relative;
-        // @include before_circle;
+        @include before_circle;
         &:before{
             content: '';
             width: 15px;
             height: 15px;
-            left: -60px;
+            left: -50px;
         }
     }
 }

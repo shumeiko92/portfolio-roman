@@ -1,0 +1,15 @@
+.mywork{
+    padding-top: 120px;
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        column-gap: 5px;
+        row-gap: 5px;
+
+    }
+    &__item{
+        width: 280px;
+        height: 280px;
+    }
+}
