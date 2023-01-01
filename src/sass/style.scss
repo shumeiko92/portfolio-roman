@@ -11,6 +11,7 @@
 
 body {
     position: relative;
+    
 }
 
 .container{
@@ -22,6 +23,13 @@ body {
     height: 3px;
     margin: 25px auto 0 auto;
     background: $main_color;
+    &_price{
+        margin-top: 31px;   
+    }
+    &_contact{
+        margin-left: 0;
+        margin-top: 0;
+    }
     
 }
 
@@ -34,3 +42,5 @@ body {
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/mywork';
+@import 'blocks/price';
+@import 'blocks/contact';
