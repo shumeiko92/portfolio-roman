@@ -68,8 +68,10 @@
             transition: 0.3s;
         }
         &:hover{
+            text-decoration: none;
+            color: #000;
             &:before{
-                background-color: yellow;
+                background-color: #000;
             }
         }
     }
@@ -77,6 +79,13 @@
         position: absolute;
         top: 25px;
         right: 25px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+          svg path{
+              fill: #fff;
+          }
+        } 
     }
     &__socials{
         position: absolute;
@@ -95,7 +104,7 @@
         transition: 0.3s;
         &:hover{
           svg path{
-              fill: blue;
+              fill: #fff;
           }
         } 
     }

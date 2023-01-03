@@ -1,7 +1,8 @@
 .promo{
     min-height: 100vh;
     position: relative;
-    background: url('../img/Untitled\ design.png') center no-repeat;
+    background: url('../../img/promo-img.png') no-repeat center;
+    background-size: cover;
     padding-top: 206px;
     &__links{
         display: flex;
@@ -12,7 +13,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 21 px;
-        color: #000;
+        color:#ffecec;
         text-decoration: none;
         &:hover{
             color: #000;

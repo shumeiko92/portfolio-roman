@@ -21,6 +21,9 @@
         }
         &-location{
             padding-left: 56px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
         }
         &-icon{
             position: relative;
@@ -48,6 +51,13 @@
             position: absolute;
             left: -43px;
             top: -53px;
+        }
+        &-place{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            padding-left: 56px;
+            margin-top: 45px;
         }
     }
 }
