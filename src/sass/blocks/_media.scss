@@ -23,6 +23,34 @@
             column-gap: 95px;
         }
     }
+    .skills{
+        &__wrapper1{
+            
+            grid-template: repeat(3, 280px) / repeat(3, 280px);
+            justify-content: center;
+
+        }
+        &__wrapper2{
+            grid-template-columns: repeat(2, 350px);
+            grid-template-rows: repeat(3, 70px);
+            justify-content: center;
+        }
+    }
+    .contact{
+        &__wrapper{
+            grid-template-columns: 350px 500px;
+        }
+        &__form{
+            grid-template-columns: repeat(2,240px);
+        }
+        &__trigger{
+            input{
+                width: 20px;
+                height: 20px;
+                margin-left: 30px;  
+            }
+        }
+    }
 }
 
 @media (max-width: 1120px){
@@ -46,7 +74,31 @@
             }
         }
     }
-    
+    .mywork{
+        &__wrapper{
+            grid-template: repeat(2, 280px) / repeat(3, 280px);
+            justify-content: center;
+            .horizont{
+                grid-column: revert;
+                grid-row: revert;
+            }
+            .vertical{
+                grid-row: revert;
+                grid-column: revert;
+            }
+         }
+    }
+    .contact{
+        &__trigger{
+            div{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .btn_form{
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 992px){
@@ -60,7 +112,7 @@
             column-gap: 25px;
         }
         &-skill{
-            grid-template-columns: 380px;
+            grid-template-columns: 1fr;
             &__right{
                 width: 310px;
             }
@@ -72,6 +124,40 @@
             padding-left: 55px;
             column-gap: 55px;
 
+        }
+    }
+    .skills{
+        &__wrapper1{
+            grid-template: repeat(4, 280px) / repeat(2, 280px);
+
+        }
+        &__wrapper2{
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(3, 70px);
+        }
+    }
+    .mywork{
+        &__wrapper{
+            grid-template: repeat(3, 280px) / repeat(2, 280px);
+        }
+    }
+    .price{
+        &__wrapper{
+            margin-top: 40px;
+            padding: 0 25px 0 50px;
+            grid-template: repeat(3,45px)/repeat(2, 300px);
+        }
+    }
+    .contact{
+        margin: 46px 0;
+        &__photo{
+            display: none;
+        }
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__form{
+            grid-template-columns: repeat(2,300px);
         }
     }
    
@@ -105,6 +191,48 @@
             
         }
     }
+    .skills{
+        &__wrapper1{
+            margin-top: 20px;
+            grid-template: repeat(4, 280px) / 280px;
+
+        }
+        &__wrapper2{
+            margin-top: 40px;
+            grid-template-columns: 350px;
+            grid-template-rows: repeat(3, 70px);
+        }
+    }
+    .mywork{
+        &__wrapper{
+            margin-top: 40px;
+            grid-template: repeat(6, 280px) / 520px;
+        }
+    }
+    .price{
+        margin-top: 46px;
+        &__wrapper{
+            grid-template: repeat(3,45px)/1fr;
+            row-gap: 20px;
+            margin-top: 20px;
+        }
+        &__item{
+            width: 85%;
+        }
+    }
+    .contact{
+        margin-top: 0;
+        padding: 40px 0;
+        &__wrapper{
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+        
+        &__form{
+            grid-template-columns: repeat(2,240px);
+        }
+    }
+    
 }
 
 @media (max-width: 576px){
@@ -124,7 +252,7 @@
     }
     .about{
         &__wrapper{
-            grid-template-columns: 300px;
+            grid-template-columns: minmax(300px, 560px);
             grid-template-rows: 340px 370px 380px;
         }
         &__photo{
@@ -149,6 +277,7 @@
         &__wrapper{
             grid-template-columns: 250px;
             grid-template-rows: repeat(2, minmax(430px, auto));
+            row-gap: 40px;
         }
         &__item{
             &-head{
@@ -159,4 +288,42 @@
             }
         }
     }
+    .skills{
+        &__wrapper2{
+            justify-content: center;
+            grid-template-columns: minmax(300px, 350px);
+        }
+    }
+    .mywork{
+        &__wrapper{
+            justify-content: center;
+            grid-template: repeat(6, 280px) / 280px;
+        }
+    }
+    .price{
+        &__wrapper{
+            padding: 0;
+            padding-left: 25px;
+
+        }
+        &__item{
+            width: 100%;
+        }
+    } 
+    .contact{
+        &__form{
+            display: flex;
+            flex-direction: column;
+        }
+        &__input{
+            height: 45px;
+        }
+        &__trigger{
+            display: flex;
+            align-items: stretch;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            row-gap: 25px;
+        }
+    }  
 }
